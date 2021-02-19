@@ -1,0 +1,63 @@
+<html>
+
+<head>
+
+</head>
+<div>
+    <input type="text" id="inputLine">
+</div>
+<div>
+    <button name="calculation" value="+">+</button>
+    <button name="calculation" value="-">-</button>
+    <button name="calculation" value="*">*</button>
+    <button name="calculation" value="/">/</button>
+</div>
+<div>
+    <button name="number" value="7">7</button>
+    <button name="number" value="8">8</button>
+    <button name="number" value="9">9</button>
+    <button name="number" value="0">0</button>
+</div>
+<div>
+    <button name="number" value="4">4</button>
+    <button name="number" value="5">5</button>
+    <button name="number" value="6">6</button>
+</div>
+<div>
+    <button name="number" value="1">1</button>
+    <button name="number" value="2">2</button>
+    <button name="number" value="3">3</button>
+    <button id="result" value="=">=</button>
+</div>
+
+<body>
+
+</body>
+<script>
+    const calculationList = document.getElementsByName('calculation');
+    const numberList = document.getElementsByName('number');
+    const result = document.getElementById('result');
+    const inputLine = document.getElementById('inputLine');
+    let accumulation = 0;
+    let calculation = null;
+
+    for (let index = 0; index < calculationList.length; index++) {
+        const element = calculationList[index];
+        element.addEventListener('click', function () {
+            calculation = element.value;
+        })
+    }
+
+    for (let index = 0; index < numberList.length; index++) {
+        const element = numberList[index];
+        element.addEventListener('click', function () {
+            inputLine.value = element.value;
+            accumulation = inputLine.value;
+        })
+    }
+    result.addEventListener('click', function () {
+
+    })
+</script>
+
+</html>
