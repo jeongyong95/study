@@ -9,6 +9,10 @@ import java.util.List;
 public class AdjacencyList {
     private List<Integer>[] graphList;
 
+    public List<Integer>[] getList() {
+        return this.graphList;
+    }
+
     public AdjacencyList(int n) {
         this.graphList = new ArrayList[n + 1];
         for (int i = 0; i < graphList.length; i++) {
