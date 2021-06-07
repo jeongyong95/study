@@ -1,4 +1,4 @@
-package stack;
+package dataStructures.stack;
 
 public interface MyStack<T> {
     void push(T t);
