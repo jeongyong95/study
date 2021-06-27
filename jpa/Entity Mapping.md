@@ -44,3 +44,6 @@
   - `AccessType.FIELD` : 필드에 직접 접근합니다.
   - `AccessType.PROPERTY` : getter/setter 메서드로 접근합니다.
   - `@Id`가 필드에 설정되면 `AccessType.FIELD`가 기본값이 되고, getter에 설정되면 `AccessType.PROPERTY`가 기본값이 됩니다.
+
+##  참고자료
+- [JPA 퀵스타트](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791186710586&orderClick=LIZ&Kc=)
